@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAYGADGET</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="image/logo.png" width="150px" height="50px" alt="LKS SMK 2025 Logo">
+            </a>
+                <div class="nav-links">
+                    <a href="index.html" id="active">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="categories.html">Categories</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="icons">
+                    <div class="search-form" id="searchForm">
+                        <form action="categories.html" method="GET">
+                            <input type="text" name="search" placeholder="Cari produk..." value="">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <i class="fas fa-search" id="searchToggle"></i>
+                    <a href="login.html"><i class="fas fa-user"></i></a>
+                    <a href="favorites.html"><i class="fas fa-heart"></i></a>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-bag position-relative">
+                            <span class="badge" id="cartCount">0</span>
+                        </i>
+                    </a>
+                    <div class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <span class="close-sidebar" id="closeSidebar">
+            <i class="fas fa-times"></i>
+        </span>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="author">MAYGADGET</div>
+                    <div class="title">PROMO TERBAIK</div>
+                    <div class="topic">LAPTOP</div>
+                    <div class="des">
+                        Kami memiliki laptop dengan spesifikasi yang sangat tinggi dan yang pasti harganya sangat murah untuk kantong para pelanggan. Dengan menggunakan laptop ini, Anda dapat melakukan berbagai hal seperti bermain game, menonton film, dan masih banyak lagi.
+                    </div>
+                    <div class="buttons">
+                        <button>JELAJAHI</button>
+                        <button>BELANJA</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="author">MAYGADGET</div>
+                    <div class="title">PROMO TERBAIK</div>
+                    <div class="topic">HANDPHONE</div>
+                    <div class="des">
+                        Kami memiliki handphone dengan fitur yang sangat canggih dan yang pasti harganya sangat murah untuk kantong para pelanggan. Dengan menggunakan handphone ini, Anda dapat melakukan berbagai hal seperti bermain game, menonton film, dan masih banyak lagi.
+                    </div>
+                    <div class="buttons">
+                        <button>JELAJAHI</button>
+                        <button>BELANJA</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="author">MAYGADGET</div>
+                    <div class="title">PROMO TERBAIK</div>
+                    <div class="topic">EARPHONE</div>
+                    <div class="des">
+                        Kami memiliki earphone dengan kualitas yang sangat tinggi dan yang pasti harganya sangat murah untuk kantong para pelanggan. Dengan menggunakan earphone ini, Anda dapat mendengarkan musik dengan sangat jelas dan nyaman.
+                    </div>
+                    <div class="buttons">
+                        <button>JELAJAHI</button>
+                        <button>BELANJA</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="author">MAYGADGET</div>
+                    <div class="title">PROMO TERBAIK</div>
+                    <div class="topic">SMARTWATCH</div>
+                    <div class="des">
+                        Kami memiliki smartwatch dengan fitur yang sangat canggih dan yang pasti harganya sangat murah untuk kantong para pelanggan. Dengan menggunakan smartwatch ini, Anda dapat melakukan berbagai hal seperti berolahraga, mengecek notifikasi, dan masih banyak lagi.
+                    </div>
+                    <div class="buttons">
+                        <button>JELAJAHI</button>
+                        <button>BELANJA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/img1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Laptop
+                    </div>
+                    <div class="description">
+                        Promo Laptop Gaming
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <div class="title">
+                        HandPhone
+                    </div>
+                    <div class="description">
+                        Promo HandPhone Termurah
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="title">
+                        Headset
+                    </div>
+                    <div class="description">
+                        Promo Headset Terbaik
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="title">
+                        SmartWatch
+                    </div>
+                    <div class="description">
+                        Promo SmartWatch Termurah
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-truck"></i>
+                <h5>Gratis Pengiriman</h5>
+                <p>Minimal pembelian Rp500.000</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-shield-alt"></i>
+                <h5>Pembayaran Aman</h5>
+                <p>Cicilan hingga 12 bulan</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-sync-alt"></i>
+                <h5>Garansi 14 Hari</h5>
+                <p>Uang kembali jika tidak puas</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h5>Dukungan 24/7</h5>
+                <p>Layanan pelanggan siap membantu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Product Section -->
+    <section id="product1" class="section-p1">
+        <div class="container">
+            <h2>Produk Kategori Semua</h2>
+            <p>Pilihan Terbaik Untuk Anda</p>
+            
+            <!-- Filter Kategori -->
+            <div class="category-filters">
+                <a href="#all" class="category-btn">Semua Produk</a>
+                <a href="#laptop" class="category-btn">Laptop</a>
+                <a href="#handphone" class="category-btn active">Handphone</a>
+                <a href="#smartwatch" class="category-btn">Smartwatch</a>
+                <a href="#headphone" class="category-btn">Headphone</a>
+            </div>
+            
+            <div class="pro-container">
+                
+                <div class="pro">
+                    <div class="favorite-icon" data-product-id="2" onclick="toggleFavorite(2, this)">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <a href="sproduct.html?id=2">
+                        <img src="image/handphone.png" alt="Smartphone Flagship">
+                    </a>
+                    <div class="des">
+                        <span>Handphone</span>
+                        <a href="sproduct.html?id=2">
+                            <h5>Asus ROG Phone 8</h5>
+                        </a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Rp. 12.000.000</h4>
+                    </div>
+                    <a href="#" class="cart" onclick="openOrderModal(2, 'Smartphone Flagship', 12000000, 'image/handphone.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+                                <div class="pro">
+                    <div class="favorite-icon" data-product-id="2" onclick="toggleFavorite(2, this)">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <a href="sproduct.html?id=2">
+                        <img src="image/handphone.png" alt="Smartphone Flagship">
+                    </a>
+                    <div class="des">
+                        <span>Handphone</span>
+                        <a href="sproduct.html?id=2">
+                            <h5>Asus ROG Phone 8</h5>
+                        </a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Rp. 12.000.000</h4>
+                    </div>
+                    <a href="#" class="cart" onclick="openOrderModal(2, 'Smartphone Flagship', 12000000, 'image/handphone.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+                                <div class="pro">
+                    <div class="favorite-icon" data-product-id="2" onclick="toggleFavorite(2, this)">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <a href="sproduct.html?id=2">
+                        <img src="image/handphone.png" alt="Smartphone Flagship">
+                    </a>
+                    <div class="des">
+                        <span>Handphone</span>
+                        <a href="sproduct.html?id=2">
+                            <h5>Asus ROG Phone 8</h5>
+                        </a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Rp. 12.000.000</h4>
+                    </div>
+                    <a href="#" class="cart" onclick="openOrderModal(2, 'Smartphone Flagship', 12000000, 'image/handphone.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+                                <div class="pro">
+                    <div class="favorite-icon" data-product-id="2" onclick="toggleFavorite(2, this)">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <a href="sproduct.html?id=2">
+                        <img src="image/handphone.png" alt="Smartphone Flagship">
+                    </a>
+                    <div class="des">
+                        <span>Handphone</span>
+                        <a href="sproduct.html?id=2">
+                            <h5>Asus ROG Phone 8</h5>
+                        </a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Rp. 12.000.000</h4>
+                    </div>
+                    <a href="#" class="cart" onclick="openOrderModal(2, 'Smartphone Flagship', 12000000, 'image/handphone.png')">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product1" class="section-p1">
+        <div class="container">
+            <h2>Produk Terlaris</h2>
+            <p>Pilihan Terbaik Untuk Anda</p>
+            <div class="pro-container">
+                <div class="pro">
+                    <a href="sproduct.html?id=1">
+                        <img src="image/laptop.png" alt="Laptop Gaming">
+                    </a>
+                    <div class="des">
+                        <span>Dell</span>
+                        <a href="sproduct.html?id=1">
+                            <h5>Laptop Gaming</h5>
+                        </a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Rp. 15.000.000</h4>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <a href="sproduct.html?id=2">
+                        <img src="image/laptop.png" alt="Laptop Gaming">
+                    </a>
+                    <div class="des">
+                        <span>HP</span>
+                        <a href="sproduct.html?id=2">
+                            <h5>Laptop Ultrabook</h5>
+                        </a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h4>Rp. 12.500.000</h4>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <a href="sproduct.html?id=3">
+                        <img src="image/laptop.png" alt="Laptop Gaming">
+                    </a>
+                    <div class="des">
+                        <span>Lenovo</span>
+                        <a href="sproduct.html?id=3">
+                            <h5>Laptop Business</h5>
+                        </a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Rp. 14.000.000</h4>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <a href="sproduct.html?id=4">
+                        <img src="image/laptop.png" alt="Laptop Gaming">
+                    </a>
+                    <div class="des">
+                        <span>Asus</span>
+                        <a href="sproduct.html?id=4">
+                            <h5>Laptop Slim</h5>
+                        </a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <h4>Rp. 13.000.000</h4>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5>EKSTRA</h5>
+                <a href="#">Merek</a>
+                <a href="#">Voucher Hadiah</a>
+                <a href="#">Afiliasi</a>
+                <a href="#">Penawaran Spesial</a>
+                <a href="#">Peta Situs</a>
+            </div>
+            <div class="col">
+                <h5>INFORMASI</h5>
+                <a href="#">Tentang Kami</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Hubungi Kami</a>
+                <a href="#">Peta Situs</a>
+            </div>
+            <div class="col">
+                <h5>AKUN SAYA</h5>
+                <a href="#">Akun Saya</a>
+                <a href="#">Riwayat Pesanan</a>
+                <a href="#">Daftar Keinginan</a>
+                <a href="#">Newsletter</a>
+                <a href="#">Pengembalian</a>
+            </div>
+            <div class="col">
+                <h5>HUBUNGI KAMI</h5>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Bhayangkara No.484</p>
+                <p><i class="fas fa-envelope"></i> maygadget@example.com</p>
+                <p><i class="fas fa-phone"></i> +6282267403010</p>
+                <p><i class="fas fa-globe"></i> Medan, Indonesia</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 MAYGADGET. Hak Cipta Dilindungi.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Modal untuk pemesanan -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalProductName"></h2>
+            <p id="modalProductPrice"></p>
+            
+            <form id="orderForm" method="post">
+                <input type="hidden" name="product_id" id="modalProductId">
+                <input type="hidden" name="add_to_cart" value="1">
+                
+                <div class="form-group">
+                    <label for="quantity">Jumlah</label>
+                    <input type="number" name="quantity" id="quantity" min="1" value="1" required>
+                </div>
+                
+                <button type="submit" class="btn-order">Tambah ke Keranjang</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
